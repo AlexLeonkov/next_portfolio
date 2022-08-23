@@ -29,6 +29,8 @@ const AboutScreen = () => {
         </p>
         <a href="https://www.instagram.com/hhey.ellen/?igshid=YzAyZWRlMzg%3D"></a>
       </div>
+
+      <ContactForm />
     </section>
   );
 };
