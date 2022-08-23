@@ -1,8 +1,16 @@
 .about {
     display: flex;
     margin-top: 25px;
+
 }
 
 .content {
     margin-left: 15px;
 }
+
+
+@media only screen and (max-width: 900px) {
+    .about{
+        display: block;
+    }
+  }

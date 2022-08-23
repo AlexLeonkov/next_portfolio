@@ -1,23 +1,23 @@
 import React from "react";
 import Link from "next/link";
-
+import styles from "./Header.module.css";
 function Header() {
   return (
-    <header className="header">
-      <nav className="navbar">
-        <ul id="navbar" className="menu">
-          <li>
-            <Link href="/">Main</Link>
-          </li>
-          <li>
-            <Link href="/clients">Clients</Link>
-          </li>
-          <li>
-            <Link href="/about">Contact</Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <header className={styles.header}>
+    <nav className={styles.nav}>
+      <ul className={styles.navList}>
+        <li className={styles.navItem}>
+          <Link href="/">Home</Link>
+        </li>
+        <li className={styles.navItem}>
+          <Link href="/clients">Clients</Link>
+        </li>
+        <li className={styles.navItem}>
+          <Link href="/about">About</Link>
+        </li>
+      </ul>
+    </nav>
+  </header>
   );
 }
 
