@@ -33,7 +33,7 @@ function Home() {
 
   return (
     <div className="home">
-      <Image priority={true} src={img} layout="fill" />
+      <Image priority={true} src={img} alt="img" layout="fill" />
       <ul className="home_list">
         <li onMouseOver={defaultMoveIn}>
           <Link href="about">About + Contact</Link>
