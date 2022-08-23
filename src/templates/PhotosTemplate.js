@@ -19,9 +19,10 @@ function photosRender({ images, header }) {
                   priority={true}
                   src={image}
                   alt={index}
-                  width={1000}
-                  height={1000}
+                  width={1500}
+                  height={1876}
                 />
+                  
               </div>
             );
           })}
