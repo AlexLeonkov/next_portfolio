@@ -1,0 +1,252 @@
+@import "~antd/dist/antd.css";
+
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.navbar {
+  list-style: none;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar .menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-top: 20px;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  transition: all 0.25s ease-out;
+}
+
+.navbar li a:hover {
+  font-weight: 400;
+  transform: translateY(-2px);
+}
+
+.main_title {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 100;
+  color: white;
+  overflow: hidden;
+  transition: all 80ms;
+}
+
+.main_title:hover {
+  transform: skewX(-10deg) translateY(-5px) translateX(-50%);
+}
+.hidden {
+  transform: translateY(-200px) translateX(-50%);
+}
+
+.img_dark {
+  filter: brightness(40%);
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin: -6px;
+}
+
+.column > img {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+.column > video {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+.row {
+  max-height: 75%;
+}
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media (min-width: 320px) and (max-width: 999px) {
+  .column {
+    display: block;
+    width: 100%;
+  }
+
+  .about {
+    width: 50%;
+  }
+  p {
+    width: 100%;
+  }
+}
+
+/* -----about---------- */
+
+.header_about {
+  height: 50px;
+  background-color: #ad9672;
+}
+
+.about {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto
+}
+
+.image_about{
+  margin-left: 100px;
+  margin-right: 10px;
+}
+
+.text_about {
+  width: 75%;
+  border: none;
+ 
+}
+
+/* contact form  */
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #ad9672;
+  padding: 20px;
+  width: 50%;
+  margin: 50px auto;
+  text-align: end;
+  border: none;
+  margin-top: -50px;
+}
+
+.container p a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar_about .menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-top: 0px;
+}
+
+.navbar_about {
+  list-style: none;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navbar_about li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  transition: all 0.25s ease-out;
+}
+
+.navbar_about li a:hover {
+  font-weight: 400;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 0px) and (max-width: 999px) {
+  .column {
+    display: block;
+    width: 100%;
+  }
+
+  .about {
+    width: 50%;
+  }
+  .text_about {
+    width: 100%;
+  }
+
+  .about {
+    float: left;
+    width: 30%;
+    margin-left: 20px;
+    border: solid 1px;
+    margin-right: 21px;
+    margin-top: 8px;
+  }
+}
+
+.form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media (min-width: 320px) and (max-width: 999px) {
+  .form {
+    width: 100%;
+  }
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: 0.5s;
+}
+
+.home_list {
+  position: relative;
+  display: block !important;
+}
+
+.home_list li {
+  list-style: none;
+}
+
+.home_list li a {
+  position: relative;
+  font-size: 3em;
+  color: #111;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.home_list:hover li a {
+  color: rgb(0, 0, 0, 0.1);
+}
+
+.home_list li:hover a {
+  color: #fff;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  padding-top: 15vh;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}

@@ -1,0 +1,8 @@
+.about {
+    display: flex;
+    margin-top: 25px;
+}
+
+.content {
+    margin-left: 15px;
+}
