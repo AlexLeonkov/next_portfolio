@@ -9,7 +9,6 @@ function photosRender({ images, header }) {
       <Header />
 
       <h1 className={styles.mainTitle}>{header}</h1>
-      
 
       <main>
         <div className={styles.container}>
@@ -22,6 +21,7 @@ function photosRender({ images, header }) {
                   alt={index}
                   width={1500}
                   height={1876}
+                  placeholder="blur"
                 />
               </div>
             );
