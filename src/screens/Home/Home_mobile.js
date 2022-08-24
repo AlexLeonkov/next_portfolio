@@ -5,7 +5,7 @@ import img1 from "../../../public/images/vertical/img1_3.jpg";
 import img2 from "../../../public/images/vertical/img2_5.jpg";
 import img250 from "../../../public/images/vertical/img250_3.jpg";
 import img251 from "../../../public/images/vertical/img251_3.jpg";
-import Link from 'next/link'
+import Link from "next/link";
 import { useState } from "react";
 
 function HomeMobileScreen() {
@@ -32,8 +32,13 @@ function HomeMobileScreen() {
   };
 
   return (
-    <div className="home">
-      <Image priority={true} src={img} alt="img"layout="fill" />
+    <div
+      style={{
+        maxhHeight: "100vh",
+      }}
+      className="home"
+    >
+      <Image priority={true} src={img} alt="img" layout="fill" />
       <ul className="home_list">
         <li onMouseOver={defaultMoveIn}>
           <Link href="about">About + Contact</Link>
