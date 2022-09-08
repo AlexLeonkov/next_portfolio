@@ -4,14 +4,15 @@ import Image from "next/image";
 import { drinksImages } from "../../../public/images/index";
 //import Header from "../layout/header";
 import PhotosTemplate from "../../templates/PhotosTemplate";
-function drinks() {
+import Header from "../../components/Header";
+function clientsScreen() {
   return (
-
     <>
+      <Header />
 
-    <PhotosTemplate images={drinksImages} header="Drinks Photography Berlin" />
+      <h1>Comming soon!</h1>
     </>
   );
 }
 
-export default drinks;
+export default clientsScreen;

@@ -21,7 +21,7 @@ function photosRender({ images, header }) {
                   alt={index}
                   width={1500}
                   height={1876}
-                  placeholder="blur"
+                  
                 />
               </div>
             );

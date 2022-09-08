@@ -6,9 +6,9 @@ import InternalTemplate from "../templates/InternalTemplate";
 
 const AboutPage = () => {
   return (
-    <InternalTemplate>
+ 
       <AboutScreen />
-    </InternalTemplate>
+  
   );
 };
 
