@@ -5,7 +5,7 @@ import img1 from "../../../public/images/horizont/img1_2.jpg";
 import img2 from "../../../public/images/horizont/img2_4.jpg";
 import img250 from "../../../public/images/horizont/img250_2.jpg";
 import img251 from "../../../public/images/horizont/img251_2.jpg";
-import Link from 'next/link'
+import Link from "next/link";
 import { useState } from "react";
 
 function HomeScreen() {
@@ -46,6 +46,9 @@ function HomeScreen() {
         </li>
         <li onMouseOver={interiorMoveIn}>
           <Link href="interior">Interior</Link>
+        </li>
+        <li>
+          <Link href="product">Products</Link>
         </li>
       </ul>
     </div>

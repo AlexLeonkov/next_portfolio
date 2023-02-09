@@ -52,6 +52,9 @@ function HomeMobileScreen() {
         <li onMouseOver={interiorMoveIn}>
           <Link href="interior">Interior</Link>
         </li>
+        <li>
+          <Link href="product">Products</Link>
+        </li>
       </ul>
     </div>
   );
