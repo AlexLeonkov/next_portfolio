@@ -3,21 +3,20 @@ import Link from "next/link";
 import styles from "./Header.module.css";
 function Header() {
   return (
-    <header className={styles.header}>
-    <nav className={styles.nav}>
-      <ul className={styles.navList}>
-        <li className={styles.navItem}>
-          <Link href="/">Home</Link>
-        </li>
-        <li className={styles.navItem}>
-          <Link href="/clients">Clients</Link>
-        </li>
-        <li className={styles.navItem}>
-          <Link href="/about">About</Link>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <div className={styles.header}>
+      <div className={styles.header_left}>
+        <Link className={styles.logo} href="/">
+          HHEY.PHOTOGRAPHY STUDIO
+        </Link>
+      </div>
+      <div className={styles.header_right}>
+        <Link href="/beauty">BEAUTY</Link>
+        <Link href="/food">FOOD</Link>
+        <Link href="/info">BIO</Link>
+        <Link href="/booking">BOOKING</Link>
+        <Link href="/faq">FAQs</Link>
+      </div>
+    </div>
   );
 }
 

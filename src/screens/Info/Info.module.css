@@ -1,0 +1,19 @@
+.about {
+margin: auto;
+width: 60%;
+font-weight: bolder;
+}
+
+.content {
+ 
+}
+
+.image {
+  
+}
+
+@media only screen and (max-width: 900px) {
+  .about {
+    display: block;
+  }
+}
